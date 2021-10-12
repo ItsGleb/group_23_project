@@ -1,0 +1,6 @@
+Build (Билд) - 1.0
+Environment (Окружение) - Win 10 x64
+Test Date - 12.10.2021
+Tester - Gleb
+
+Что проверяем|Результат
