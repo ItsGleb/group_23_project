@@ -1,0 +1,58 @@
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+
+$ git branch *Наименование ветки*
+
+2. Запушить все ветки на внешний репозиторий
+
+$ git push -u origin *Наименование ветки* / либо $ git push origin --all #запушить сразу все ветки#
+
+# Прописываем для каждой ветки отдельно#
+## После этой команды локальная ветка и ветка в репозитарии будут связаны между собой. 
+То есть, после такой команды (которая выполняется единожды), можно будет 
+отправлять/принимать изменения лишь выполняя git push из ветки без указания всяких алиасов 
+для сервера и удалённых веток.##
+
+$ git branch -d *Наименование ветки* ###удаление ветки локальной###
+$ git push origin -d *Наименование ветки* ###удаление ветки удаленной###
+
+3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта
+
+  $ touch the_structure_of_the_bug_report.txt 
+  $ git add the_structure_of_the_bug_report.txt; git commit -m "комментарий"
+
+4. Запушить структуру багрепорта на внешний репозиторий
+
+  $ git push
+
+5. Вмержить ветку Bug Reports в Main
+  
+  $ git checkout main
+  $ git merge Bug_reports
+ 
+6. Запушить main на внешний репозиторий.
+
+   $ git push 
+
+7. В ветке CheckLists набросать структуру чек листа.
+
+  $ touch the_structure_of_the_checklist.txt 
+  $ git add the_structure_of_the_checklist.txt; git commit -m "комментарий"  
+
+8. Запушить структуру на внешний репозиторий
+
+   $ git push
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+
+ Жмем на "Compare & pull request"
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+
+ $ git pull
